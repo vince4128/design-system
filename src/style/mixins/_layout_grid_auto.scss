@@ -1,0 +1,19 @@
+@mixin gridAuto($min-width, $fallback: 3) {
+    > * {
+        float:left;
+        width: calc(100%/#{$fallback} - #{$gap-horizontal});
+
+        &:nth-child(#{$fallback}n + 1) {
+            clear:both;
+        }
+    }
+
+    @supports(grid-area: auto){
+        grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+
+        > * {
+            width: auto;
+            margin: 0;
+        }
+    }
+}

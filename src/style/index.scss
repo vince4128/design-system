@@ -4,5 +4,11 @@ see : https://medium.com/codyhouse/create-your-design-system-part-1-typography-7
 /*RESET*/
 @import "../../node_modules/normalize.css/normalize.css";
 
-/* TYPOGRAPHY */
+/*VARIABLES*/
+@import "./variables/variables";
+
+/*TYPOGRAPHY*/
 @import "./typography/typography";
+
+/*GRID*/
+@import "./mixins/mixins";
