@@ -1,0 +1,38 @@
+//see https://medium.com/codyhouse/create-your-design-system-part-2-grid-layout-aa961d59b8d6 for details
+
+$grid-columns: 12;
+
+:root{
+    --grid-gap: 10px;
+}
+
+.flex-grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(var(--grid-gap)* -1) 0 0 calc(var(--grid-gap) * -1);
+}
+
+.col{
+    padding: calc(var(--grid-gap)) 0 0 calc(var(--grid-gap));
+    background-clip: content-box; //background is not applied to gap
+    flex-basis: 100%;
+}
+
+.flex-grid--no-gap{
+    margin:0;
+    .col{
+        padding:0;
+    }
+}
+
+@for $i from 1 through $grid-columns {
+    .col--#{$i} {
+      flex-basis: round-width($i);
+      max-width: round-width($i); 
+    }
+}
+
+@function round-width ($i) {
+    $width : floor(100 * $i * 100/ $grid-columns) / 100;
+    @return $width#{"%"};
+}
