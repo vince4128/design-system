@@ -1,4 +1,10 @@
+$gap-horizontal: 10px;
+$gap-vertical: $gap-horizontal;
+$grid-columns: 12;
+
 @import "./layout_grid";
-@import "./layout_grid_auto";
+@import "./layout_grid-auto";
 @import "./layout_one-dimension";
-@import "./layout_two-dimension";
+@import "./layout_grid-layout";
+@import "./layout_grid-advance";
+@import "./example";
