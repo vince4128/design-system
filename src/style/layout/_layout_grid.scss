@@ -1,6 +1,3 @@
-$gap-horizontal: 10px;
-$gap-vertical: $gap-horizontal;
-
 @mixin grid {
     //fallback for IE
     &::before, &::after {
