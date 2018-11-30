@@ -7,16 +7,20 @@ see : https://medium.com/codyhouse/create-your-design-system-part-1-typography-7
 /*VARIABLES*/
 @import "./variables/variables";
 
+/*UTILS*/
+@import "./utils/utils";
+
 /*MIXINS*/
 @import "./mixins/mixins";
 
 /*TYPOGRAPHY*/
 @import "./typography/typography";
 
+/*ICONS*/
+@import "./icons/icons";
+
+/*BUTTON*/
+@import "./button/button";
+
 /*LAYOUT*/
 @import "./layout/layout";
-
-.test{
-    @include grid;
-    @include gridAuto(260px);
-}

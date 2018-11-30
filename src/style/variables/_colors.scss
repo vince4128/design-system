@@ -55,6 +55,18 @@
     --btn-primary-active: var(--color-primary-dark);
     --btn-primary-label: var(--white);
 
+    --btn-secondary-bg: var(--gray-1);
+    --btn-secondary-active: var(--gray-2);
+    --btn-secondary-label: var(--gray-10);
+
+    --btn-accent-bg: var(--color-accent);
+    --btn-accent-hover: var(--color-accent-light);
+    --btn-accent-active: var(--color-accent-dark);
+    --btn-accent-label: var(--white);
+
+    --btn-disabled-bg: var(--gray-2);
+    --btn-disabled-label: var(--gray-10);
+
     /* icons */
     --color-icon-primary: var(--gray-4);
     --color-icon-secondary: inherit;
